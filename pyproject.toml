@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xai-knowledge-graphs"
+version = "0.1.0"
+authors = [{name = "LT+TKS", email = ""}]
+description = "Something cool here."
+requires-python = ">=3.8"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.ruff]
+lint.select = ["I"]
+line-length=120

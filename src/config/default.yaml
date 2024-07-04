@@ -1,0 +1,18 @@
+model_name: data2vec
+data_type: images
+path_data: ./data/
+path_CAs: ./data/
+path_outputs: ./outputs/
+concept_name: banana
+seed: 42
+test_size: 0.2
+train_sizes: [50, 100, 200, 500, 1000]
+max_size: 10
+min_size: 50
+n_splits: 10
+layers: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+batch_size: 16
+random: false
+fig_width: 1.5
+font_size: 8.0
+dpi: 1000
